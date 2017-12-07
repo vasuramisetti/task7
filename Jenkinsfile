@@ -1,4 +1,4 @@
-properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/vasuramisetti/task5git.git/'], pipelineTriggers([githubPush()])])
+properties([[$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/vasuramisetti/task7.git/'], pipelineTriggers([githubPush()])])
 
 pipeline {
     agent any
@@ -18,7 +18,7 @@ pipeline {
                  }
                  stage('Deploy') {
                   steps {
-                       echo 'Hello World'
+                       echo 'Hello World****** '
 			 build job:'jobb'
                        }
                       }
