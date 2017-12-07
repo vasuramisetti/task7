@@ -18,7 +18,7 @@ pipeline {
                  }
                  stage('Deploy') {
                   steps {
-                       echo 'Hello World****** '
+                       echo '*******Hello World****** '
 			 build job:'jobb'
                        }
                       }
